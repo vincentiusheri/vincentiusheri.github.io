@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.html{
+	height: 100%;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.halaman{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.navbar{
+	display: flex;
+	height: 8vh;
+	background-color: black;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.kotaklogo a img{
+	margin-left: 1vw;
+	height: 8vh;
+}
+
+.tombol{
+	margin-right: 1vw;
+	display: flex;
+	color: white;
+	list-style: none;
+}
+
+.tombol a{
+	margin-left: 1vw;
+	text-decoration: none;
+	font-family: 'Grandstander', cursive;
+	color: white;
+	font-size: 2.5vh;
+}
+
+.tombol a:hover{
+	font-size: 3vh;
+}
+
+.kontainerutama{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: " judul judul judul"
+						 " namadewi dan namaheri"
+						 " namaortudewi dan namaortuheri"
+						 " dialog animasi animasi"
+						 " footer footer footer";
+	grid-template-columns: 1fr 0.2fr 1fr;
+	grid-template-rows: 0.2fr 0.1fr 0.2fr 0.7fr 0.2fr;
+}
+.judul{
+	grid-area: judul;
+}
+.namadewi{
+	grid-area: namadewi;
+}
+.dan{
+	grid-area: dan;
+}
+.namaheri{
+	grid-area: namaheri;
+}
+.namaortudewi{
+	grid-area: namaortudewi;
+}
+.namaortuheri{
+	grid-area: namaortuheri;
+}
+.dialog{
+	grid-area: dialog;
+}
+
+.kotakdialog{
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	max-height: 100px;
+}
+
+#cerita{
+	display: inline-block;
+	text-align: right;
+	height: 100px;
+	/*font-family: 'Bangers', cursive;*/
+}
+.animasi{
+	grid-area: animasi;
+	display: flex;
+	justify-content: flex-start;
+}
+.footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	border: none;
+	outline: none;
+	background-color: #ffffffff;
+}
+
+.tekstempat{
+	margin-top: 10px;
+}
+
+.kontainerteks{
+	padding: 10px;
+}
+
+.kontainerpeta{
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	margin-bottom: 30px;
+}
+
+#tombolpeta{
+	background-color: #ffffffff;
+	cursor: pointer;
+}
+
+#tombolpetasvg:hover{
+	width: 60px; 
+	height: 60px;
+}
+
+.kontainertombollivestreaming{
+	display: flex;
+	justify-content: center;
+	height: 15vh;
+}
+
+#tombollivestreaming{
+	background-color: #ffffffff;
+	cursor: pointer;
+}
+
+#tombollivestreamingsvg:hover{
+	width: 240px; 
+	height: 80px;
+}
+
+h1, h2, h3, h5, p{
+	text-align: center;
+	font-family: 'Overlock SC', cursive;
+}
+
+@keyframes putar{
+	from{transform: rotateY(0deg)}
+	to{transform: rotateY(360deg)}
+}
+
+#homebutton:hover{
+	width: 60px;
+	height: 70px;
+	animation: putar 2s linear infinite;
+}
+
+
+
